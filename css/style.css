@@ -254,6 +254,85 @@ section h2::after {
     gap: 20px;
 }
 
+/* Episode Cards */
+.episode-card {
+    background-color: var(--card-bg);
+    border-radius: 6px;
+    overflow: hidden;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.episode-card:hover {
+    transform: scale(1.05);
+    background-color: var(--hover-bg);
+}
+
+.episode-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.episode-info {
+    padding: 15px;
+}
+
+.episode-info h3 {
+    margin-bottom: 8px;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.channel-name {
+    color: var(--gray-text);
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.episode-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.duration {
+    color: var(--gray-text);
+}
+
+/* Channel Filter */
+.channel-filter {
+    margin-bottom: 30px;
+}
+
+.filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.filter-option {
+    padding: 8px 16px;
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 14px;
+}
+
+.filter-option:hover {
+    background-color: var(--hover-bg);
+}
+
+.filter-option.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
 .episode-card {
     background-color: var(--card-bg);
     border-radius: 6px;
