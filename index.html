@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SciFi Tube - Votre plateforme de chaînes YouTube SciFi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SciFi<span>Tube</span></div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Accueil</a></li>
+                <li><a href="#">Chaînes</a></li>
+                <li><a href="#">Ma Liste</a></li>
+                <li><a href="#">Nouveautés</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" placeholder="Rechercher..." id="search-input">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-profile">
+                <img src="https://via.placeholder.com/40" alt="Profil utilisateur">
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Découvrez les meilleures chaînes SciFi</h1>
+                <p>Explorez, regardez et notez vos épisodes préférés de science-fiction sur YouTube</p>
+                <button class="btn-primary">Explorer maintenant</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="featured-channels">
+            <h2>Chaînes populaires</h2>
+            <div class="channel-slider">
+                <div class="channel-card">
+                    <img src="https://via.placeholder.com/300x170" alt="Chaîne SciFi">
+                    <div class="channel-info">
+                        <h3>Kurzgesagt</h3>
+                        <p>Vulgarisation scientifique et concepts futuristes</p>
+                        <div class="rating">★★★★☆</div>
+                    </div>
+                </div>
+                <div class="channel-card">
+                    <img src="https://via.placeholder.com/300x170" alt="Chaîne SciFi">
+                    <div class="channel-info">
+                        <h3>Isaac Arthur</h3>
+                        <p>Futurisme et science-fiction réaliste</p>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                </div>
+                <div class="channel-card">
+                    <img src="https://via.placeholder.com/300x170" alt="Chaîne SciFi">
+                    <div class="channel-info">
+                        <h3>DUST</h3>
+                        <p>Courts-métrages de science-fiction</p>
+                        <div class="rating">★★★★☆</div>
+                    </div>
+                </div>
+                <div class="channel-card">
+                    <img src="https://via.placeholder.com/300x170" alt="Chaîne SciFi">
+                    <div class="channel-info">
+                        <h3>PBS Space Time</h3>
+                        <p>Astrophysique et concepts spatiaux</p>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <h2>Catégories</h2>
+            <div class="category-container">
+                <div class="category">Space Opera</div>
+                <div class="category">Hard SciFi</div>
+                <div class="category">Cyberpunk</div>
+                <div class="category">Post-Apocalyptique</div>
+                <div class="category">Voyage Temporel</div>
+                <div class="category">Futurisme</div>
+            </div>
+        </section>
+
+        <section class="episodes-section">
+            <h2>Épisodes récents</h2>
+            <div class="episodes-grid">
+                <!-- Les épisodes seront chargés dynamiquement via JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <div id="episode-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="episode-details">
+                <!-- Détails de l'épisode chargés dynamiquement -->
+            </div>
+            <div class="rating-system">
+                <h3>Noter cet épisode</h3>
+                <div class="stars">
+                    <i class="far fa-star" data-value="1"></i>
+                    <i class="far fa-star" data-value="2"></i>
+                    <i class="far fa-star" data-value="3"></i>
+                    <i class="far fa-star" data-value="4"></i>
+                    <i class="far fa-star" data-value="5"></i>
+                </div>
+                <button id="submit-rating" class="btn-primary">Soumettre</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">SciFi<span>Tube</span></div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 SciFiTube. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
