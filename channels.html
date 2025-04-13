@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SciFi Tube - Chaînes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SciFi<span>Tube</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="channels.html" class="active">Chaînes</a></li>
+                <li><a href="#">Ma Liste</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" placeholder="Rechercher..." id="search-input">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-profile">
+                <img src="https://via.placeholder.com/40" alt="Profil utilisateur">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="channels-section">
+            <h2>Nos Chaînes SciFi</h2>
+            <p class="section-description">Découvrez les meilleures chaînes YouTube de science-fiction et leurs contenus uniques.</p>
+            
+            <div class="channels-grid" id="channels-grid">
+                <!-- Les chaînes seront chargées dynamiquement via JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">SciFi<span>Tube</span></div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 SciFiTube. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/channels.js"></script>
+</body>
+</html>

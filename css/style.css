@@ -228,6 +228,145 @@ section h2::after {
     color: #ffc107;
 }
 
+/* Channel Detail Cards for Channels Page */
+.channels-section {
+    margin-bottom: 40px;
+}
+
+.section-description {
+    color: var(--gray-text);
+    margin-bottom: 30px;
+    font-size: 16px;
+    max-width: 800px;
+}
+
+.channels-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.channel-detail-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.channel-detail-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.channel-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.channel-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 3px solid var(--primary-color);
+}
+
+.channel-title h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.channel-body {
+    margin-bottom: 25px;
+}
+
+.channel-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.channel-categories {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.category-label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.categories {
+    color: var(--gray-text);
+}
+
+.channel-videos h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.channel-videos h4:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.channel-videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.channel-video-item {
+    background-color: var(--dark-bg);
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.channel-video-item:hover {
+    transform: scale(1.03);
+}
+
+.channel-video-item img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.video-info {
+    padding: 12px;
+}
+
+.video-info h5 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    line-height: 1.4;
+    height: 40px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.video-info .duration {
+    font-size: 12px;
+    color: var(--gray-text);
+}
+
 /* Categories */
 .category-container {
     display: flex;
